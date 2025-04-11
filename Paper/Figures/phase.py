@@ -91,8 +91,8 @@ for interval in intervals:
 for interval in intervals2:
     ax.axvspan(interval[0], interval[1], color =  (1., 0.721569, 0.219608), alpha = 0.3)
 ax.axhline(0, color = '0.7')
-ax.plot((np.arange(N - 1) + 0.5) * dt, dpower, color = (0.317647, 0.654902, 0.752941), label = f'$f_j={fj}$\,Hz')
-ax.plot((np.arange(N - 1) + 0.5) * dt, dpower2, color = (1., 0.721569, 0.219608), label = f'$f_j={fj2}$\,Hz')
+ax.plot((np.arange(N - 1) + 0.5) * dt, dpower, color = (0.317647, 0.654902, 0.752941), label = f'$f_j={fj}$\\,Hz')
+ax.plot((np.arange(N - 1) + 0.5) * dt, dpower2, color = (1., 0.721569, 0.219608), label = f'$f_j={fj2}$\\,Hz')
 ax.set_xlim(T0, Tf)
 ax.set_ylim(-1., 1)
 ax.set_ylabel(r'$\frac d{dt}\frac{|x(t)|^2}{|x_0(\infty)|^2}$\,[s$^{-1}$]')
